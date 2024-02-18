@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using StoreIT.Model;
 
 namespace StoreIT.Data
 {
@@ -9,5 +10,6 @@ namespace StoreIT.Data
         {
             
         }
+        public DbSet<Product> Products { get; set; }
     }
 }
