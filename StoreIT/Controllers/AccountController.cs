@@ -18,6 +18,8 @@ namespace StoreIT.Controllers
         {
             _configuration = configuration;
         }
+
+
         private string CreateJwt (User user)
         {
             List<Claim> claims = new List<Claim>()
