@@ -23,7 +23,7 @@ namespace StoreIT.Controllers
         {
             var product = new Product()
             {
-                Title = createProduct.Title,
+                Name = createProduct.Name,
                 Brand = createProduct.Brand,
             };
 
@@ -39,7 +39,7 @@ namespace StoreIT.Controllers
                 .Select( displayproduct => new ProductGetDto
                 {
                     Id = displayproduct.Id,
-                    Title = displayproduct.Title,
+                    Name = displayproduct.Name,
                     Brand = displayproduct.Brand,
                     CreatedAt = displayproduct.CreatedAt,
                     UpdatedAt = displayproduct.UpdatedAt
@@ -63,7 +63,7 @@ namespace StoreIT.Controllers
                 {
                     Id = displayproduct.Id,
                     Brand = displayproduct.Brand,
-                    Title = displayproduct.Title,
+                    Name = displayproduct.Name,
                     CreatedAt = displayproduct.CreatedAt,
                     UpdatedAt = displayproduct.UpdatedAt,
                 })
@@ -90,7 +90,7 @@ namespace StoreIT.Controllers
             }
 
             product.Brand = updateProduct.Brand;
-            product.Title = updateProduct.Title;
+            product.Name = updateProduct.Name;
             product.UpdatedAt = DateTime.Now;
 
             await _context.SaveChangesAsync();
