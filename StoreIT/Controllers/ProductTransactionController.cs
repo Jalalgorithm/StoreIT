@@ -18,6 +18,7 @@ namespace StoreIT.Controllers
         [HttpPost("CheckOut")]
         public async Task<IActionResult> CheckOutProduct (int productId , int UserId)
         {
+            var transaction = _context.ProductTransactions.ToList();
 
         }
     }
