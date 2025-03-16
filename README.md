@@ -4,3 +4,4 @@ An innovative IT store management system, leveraging ASP.NET Core for robust bac
 
 # ENDPOINT
 Below are endpoints 
+ Authorization:JWT
